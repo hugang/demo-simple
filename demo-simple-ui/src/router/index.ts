@@ -11,7 +11,7 @@ export const menuRoutes: RouteRecordRaw[] = [
 			{
 				path: '/simple/api',
 				name: 'api',
-				component: () => import('../views/api/index.vue'),
+				component: () => import('../views/simple/api/index.vue'),
 				meta: {
 					title: 'api list',
 					icon: 'icon-fire'
