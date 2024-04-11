@@ -4,13 +4,31 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.hugang</groupId>
-        <artifactId>demo-dependencies</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <version>0.0.1-SNAPSHOT</version>
 
     <artifactId>demo-simple-server</artifactId>
-
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <oshi.version>6.5.0</oshi.version>
+        <minio.version>8.5.9</minio.version>
+        <redisson.version>3.27.2</redisson.version>
+        <mybatisplus.version>3.5.6</mybatisplus.version>
+        <easy-trans.version>3.0.1</easy-trans.version>
+        <easy-captcha.version>1.6.2</easy-captcha.version>
+        <dynamic-datasource.version>4.3.0</dynamic-datasource.version>
+        <knife4j-openapi3.version>4.5.0</knife4j-openapi3.version>
+        <easyexcel.version>3.3.4</easyexcel.version>
+        <hutool.version>5.8.27</hutool.version>
+        <jsoup.version>1.17.2</jsoup.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -53,6 +71,7 @@
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+            <version>${knife4j-openapi3.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -62,10 +81,12 @@
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
+            <version>${mapstruct.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
+            <version>${mapstruct.version}</version>
         </dependency>
     </dependencies>
 
